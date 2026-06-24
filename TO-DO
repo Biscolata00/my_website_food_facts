@@ -8,8 +8,8 @@ TODO:
 * finish hosting blog online with domain, github and cloudfare
 
 
-* make it phone friendly / dynamic
-
+* make navbar elements stack instead of overflow
+* make searchbar longer
 
 
 
@@ -26,3 +26,5 @@ DONE:
 * put code on github
 * center search bar 
 * put search bar on the very right
+* make wrapped topbar elements centered
+* make it phone friendly / dynamic
