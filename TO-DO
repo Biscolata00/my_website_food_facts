@@ -1,16 +1,10 @@
 TODO: 
 * finish writing salt article
 * create salt article mk
-* create salt article sources mk
 * create salt article kpts mk
 * buy domain cookerymadeeasy.org
 * link github to cloudfare
 * finish hosting blog online with domain, github and cloudfare
-
-
-* make navbar elements stack instead of overflow
-* make searchbar longer
-
 
 
 DONE:
@@ -28,3 +22,5 @@ DONE:
 * put search bar on the very right
 * make wrapped topbar elements centered
 * make it phone friendly / dynamic
+* create salt article sources mk
+* make searchbar longer

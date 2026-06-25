@@ -5,27 +5,5 @@
         "page_sources": "articles_pages\\salt_sources.html",
         "article_name": "Salt",
         "children":[]
-    },
-    {
-        "page_link": "articles_pages\\salt.html",
-        "page_kpts": "salt\\salt_kpts.html",
-        "page_sources": "salt\\salt_sources.html",
-        "article_name": "Gluten", 
-        "children": [
-             {
-                "page_link": "articles_pages\\salt.html",
-                "page_kpts": "salt\\salt_kpts.html",
-                "page_sources": "salt\\salt_sources.html",
-                "article_name": "Gliadins",
-                "children":[]
-            },
-            {
-                "page_link": "articles_pages\\salt.html",
-                "page_kpts": "salt\\salt_kpts.html",
-                "page_sources": "salt\\salt_sources.html",
-                "article_name": "Glutenins",
-                "children":[]
-            }
-        ]        
     }
 ]

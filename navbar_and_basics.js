@@ -90,34 +90,6 @@ const nesting = getNestingString();
 
 
 // elements to add
-const headerEl2 = `
-        <div class = "topbar">
-            <div class = "logo">
-                <a href="${nesting}/home.html"><img src="${nesting}/images/logo.png" alt="cookery made easy logo" style="width:70px;height:70px;"></a>
-            </div>
-
-            <div class = "name">
-                <h1>Cookery Made Easy</h1>
-            </div>
-            
-            <div class="navbar">
-            <nav>
-                <ul> 
-                    <li class="main_tabs"><a href="${nesting}/home.html">Home</a></li>
-                    <li class="main_tabs"><a href="${nesting}/all_articles.html">Articles</a></li>
-                    <li class="main_tabs"><a href="${nesting}/about.html">About</a></li>
-                    
-                    <br>
-
-                    <!-- pagefind (search bar) https://pagefind.app/docs/ -->
-                    <li class="search_bar"><pagefind-modal-trigger></pagefind-modal-trigger></li>
-                    <li><pagefind-modal></pagefind-modal></li>
-                </ul>                
-            </nav>
-            </div> 
-        </div>
-`;
-
 const headerEl = `
         <div class = "topbar">
             <div class = "logo" id="logo">

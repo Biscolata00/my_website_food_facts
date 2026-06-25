@@ -3,22 +3,8 @@
   --font-size-navbar-title: 16px;
   --hover-color: #adbb97;
   --tab-color: rgb(65, 35, 11);
-  --move-up-on-hover: translate(0%, -5%);
-  
+  --move-up-on-hover: translate(0%, -5%);  
 }
-
-
-/* .topbar{ /*main topbar container
-    display: grid; 
-    grid-template-columns: 100px 1.5fr 2fr;
-    grid-template-rows: 1;  
-    padding-top: 1em;
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-bottom: 3em; 
-    justify-content: center; 
-} */
-
 
 /* NAV BAR*/
 /*Parent*/
@@ -71,20 +57,18 @@
   /*border: 2px solid pink; /*for debugging
 }*/
 
-/*SEARCHBAR*/
-/* #searchbar{
-  margin-left: auto
-} */
-
-/*.searchbar{
-  /*border: 2px solid rgb(8, 155, 20); /*for debugging
-}*/
+.searchbar{
+  /*border: 2px solid rgb(8, 155, 20); /*for debugging*/
+  width: 20%;
+}
 
 @media(min-width: 1000px){
   #searchbar {
-     margin-left: auto
+     margin-left: auto;
+     padding-right: 20px;
   }
 }
+
 
 /*NAME*/
 .name{
@@ -108,22 +92,10 @@
 }*/
 
 
-
-
-
 /*currently not working, meant to show which tab you're on*/
 /* .active { 
   text-shadow:0px 0px 1px black; 
 } */
-
-/* .navbar input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-} */
-
 
 
 /* ARTICLE TABS*/
@@ -188,6 +160,16 @@
 }
 
 
+/*KEYPOINTS STYLING*/
+dt{
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+dd{
+  display: list-item; /*treat it like list*/
+  list-style-type: disc; /*add list bullet point*/
+}
 
 /*FOOTER*/
 .footer {
