@@ -1,4 +1,5 @@
-:root { /*variables*/
+/*--- GLOBAL VARS ---*/
+:root { 
   --font-size-navbar: 20px;
   --font-size-navbar-title: 16px;
   --hover-color: #adbb97;
@@ -21,7 +22,7 @@ body div:not(.footer){
   padding-top: 1em;
 }
 
-/* NAV BAR*/
+/*--- TOPBAR ---*/
 /*Parent*/
 .topbar{ /*main topbar container*/
     display: flex;
@@ -66,12 +67,8 @@ body div:not(.footer){
     font-size: var(--font-size-navbar);
 } 
 
-/*.main_tabs{
-  /*border: 2px solid pink; /*for debugging
-}*/
 
 .searchbar{
-  /*border: 2px solid rgb(8, 155, 20); /*for debugging*/
   width: 20%;
   min-width: 250px;
 }
@@ -86,7 +83,6 @@ body div:not(.footer){
 
 /*NAME*/
 .name{
-  /*border: 3px solid rgba(0, 128, 0, 0.404); /*for debugging*/
   flex-shrink: 5;
 }
 
@@ -106,8 +102,8 @@ body div:not(.footer){
   text-shadow:0px 0px 1px black; 
 } */
 
-
-/* ARTICLE TABS*/
+/*--- ARTICLE ---*/
+/*ARTICLE TABS*/
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -115,7 +111,6 @@ body div:not(.footer){
   background-color: #d4ddc5;
   display:inline-block;
   margin-left: 1.5em;
-  /*border: 2px solid rgb(47, 8, 155); /*for debugging*/
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -153,8 +148,6 @@ body div:not(.footer){
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  /* width: 95vw; */
-  /*border: 2px solid rgb(8, 155, 20); /*for debugging*/
 }
 
 /* iframe */
@@ -165,7 +158,6 @@ body div:not(.footer){
   height: 0vh;
   border: none;
   overflow:hidden;
-  /*border: 2px solid rgb(155, 42, 8); /*for debugging*/
 }
 
 
@@ -180,7 +172,7 @@ dd{
   list-style-type: disc; /*add list bullet point*/
 }
 
-/*FOOTER*/
+/*--- FOOTER ---*/
 body{ /*set the body to take minimum the whole page*/
   min-height: 100vh;
   margin: 0;
@@ -205,7 +197,15 @@ body{ /*set the body to take minimum the whole page*/
 }
 
 
+/*Sources*/
+.sources_list{
+  list-style-type: none;
+  padding: 0;
+}
 
+.sources_list li{
+  padding-bottom: 5px;
+}
 
 /*article title*/
 #article_title {
@@ -218,7 +218,9 @@ h2 {
   font-family: "Arial"
 }
 
-/*INDEX*/
+
+
+/*--- INDEX ---*/
 
 .article_title {
 	display: inline-block;

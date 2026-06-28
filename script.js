@@ -1,6 +1,14 @@
 // prevent scrollbar of the iframe
+function resizeIframeSave(obj) {
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+}
+
 function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+}
+
+function myalert(){
+  alert("opening 2nd tab")
 }
 
 // open only one tab at a time
@@ -23,6 +31,29 @@ function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howt
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentPart).style.display = "block";
   evt.currentTarget.className += " active";
+ 
+  var myIframe = document.getElementById(contentPart);
+    
+    console.log("CHECK BELOW 1")
+    console.log(myIframe)
+    console.log("CHECK BELOW 2")
+    resizeIframe("sources")
+
+    // myIframe.contentDocument = undefined
+    // myIframe.contentWindow.document = nothing showing at all
+
+
+  resizeIframe(myIframe);
+  //var iframeContent = document.getElementById(contentPart).contentWindow; //.contentWindow.document.documentElement;
+  // window.addEventListener("DOMContentLoaded", function() {
+  //   alert("ZE")
+  //   var iframe = document.getElementById(contentPart);
+  //   console.log(iframe)
+  //   //var iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+  //   // var iframeContent = document.getElementById(contentPart).contentWindow.document.body.innerHTML;
+  //   // alert("ZE")
+  //   resizeIframe(iframeContent);
+//   });
 } 
 
 // open a tab by default once the content has finished loading

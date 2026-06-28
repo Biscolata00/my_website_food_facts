@@ -26,20 +26,20 @@
 
         <div class="tab" id="tabs">
             <button class="tablinks" onclick="openContent(event, 'article')" id="defaultOpen">Article</button>
-            <button class="tablinks" onclick="openContent(event, 'keypoints')" >Key points</button>
+            <button class="tablinks" onclick="openContent(event, 'keypoints');">Key points</button>
             <button class="tablinks" onclick="openContent(event, 'sources')">Sources</button>
         </div>
 
         <!-- Tab content -->
         <div id="article" class="tabcontent">
-            <iframe src="..\articles_content\salt\salt.html" 
-            onload="resizeIframe(this)" 
+            <iframe src="..//articles_content/salt/salt.html" 
+            onload="resizeIframe(this)"
             title="Salt"></iframe>
         </div>
 
         <div id="keypoints" class="tabcontent">
             <iframe src="..//articles_content/salt/salt_kpts.html" 
-            onclick="resizeIframe(this)" 
+            onclick="myalert()" 
             title="Salt"></iframe>
         </div>
 
