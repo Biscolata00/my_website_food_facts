@@ -144,7 +144,7 @@ const sidebarEl2 = `
 
 const basic_info = `
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=0;">
+        <meta name="viewport" content="width=1000; user-scalable=0;" />
         
         <link rel="icon" href="${nesting}/images/logo.png">
         <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
