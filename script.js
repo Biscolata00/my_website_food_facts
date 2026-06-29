@@ -40,9 +40,6 @@ function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howt
 // open a tab by default once the content has finished loading
 window.addEventListener("DOMContentLoaded", function() { // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
   document.getElementById("defaultOpen").click();
-  var myIframe = document.getElementById(article_iframe);
-  resizeIframe(myIframe)
-  
 });
 
 

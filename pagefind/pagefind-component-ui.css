@@ -23,7 +23,7 @@
 :root {
     --pf-text: #1a1a1a;
     --pf-text-secondary: #666;
-    --pf-text-muted: #767676; /*Text in searchbar*/
+    --pf-text-muted: #767676;
     --pf-background: #fff;
     --pf-border: #e0e0e0;
     --pf-border-focus: #999;
@@ -154,7 +154,7 @@ pagefind-config {
     display: none;
 }
 
-pagefind-modal-trigger { 
+pagefind-modal-trigger {
     display: inline-block;
     width: 100%; /*change searchbar width*/
 }

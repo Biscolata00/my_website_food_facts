@@ -57,8 +57,6 @@ function initActiveLinks() {
 
 
 
-
-
 // NESTING
 function getNestingString() {
   // This function prepares the "nesting" variable for your header and footer (see below).
@@ -146,10 +144,17 @@ const sidebarEl2 = `
 
 const basic_info = `
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0;">
         
         <link rel="icon" href="${nesting}/images/logo.png">
+        <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/my-favicon/site.webmanifest" />
 `;
+
+// icons generated with https://realfavicongenerator.net/
 
 const css_links = `                
               
