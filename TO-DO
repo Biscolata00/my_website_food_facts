@@ -1,10 +1,9 @@
 TODO: 
-* fix zoomed in on mobile
 * index on google
 * publish article salt html
-* add an icon for mobile tab
 * prevent website url from showing .html
-
+* center three main page similarly to salt page
+* set up landing page
 
 DONE:
 * create an index from a json 
@@ -30,4 +29,8 @@ DONE:
 *tabs no scrolling applied to all, not just default
 * link github to cloudfare
 * finish hosting blog online with domain, github and cloudfare
-* understand why local and online versions are different -> need to clear cache with Ctrl + Shift + Delete
+* understand why local and online versions are different 
+-> need to clear cache with Ctrl + Shift + Delete
+* add an icon for mobile tab
+* fix zoomed in on mobile (removed scale = 1)
+* css for searchbar now in styles.css so that re-indexing does not affect it

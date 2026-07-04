@@ -7,9 +7,6 @@ function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
 }
 
-function myalert(){
-  alert("opening 2nd tab")
-}
 
 // open only one tab at a time
 function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howto_js_tabs.asp

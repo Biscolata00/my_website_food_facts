@@ -156,7 +156,7 @@ pagefind-config {
 
 pagefind-modal-trigger {
     display: inline-block;
-    width: 100%; /*change searchbar width*/
+    /*width: 100%; /*change searchbar width*/
 }
 
 :is(*, #\#):is(*, #\#) :is([class^="pf-"], [class*=" pf-"]):not(svg, svg *) {

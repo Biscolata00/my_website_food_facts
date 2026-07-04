@@ -22,10 +22,29 @@ npx -y pagefind --site C:\Users\leyla\Desktop\website\cookery_made_easy --serve 
 
     <body><!-- main content, everything visible to be written here-->
         <div  class="home_div">
-        <h3>Latest article</h3>
-        <a href = articles_pages\salt.html>Check out the only available article </a>
+            <p>!!! page in construction !!!</p>
+
+        <h3>Latest articles</h3>
+        <template id="latest_article_template">
+            <div>
+                <a class = "article_title"></a>
+                <a href=""><img src="" style="width:70px;height:70px;"></a>
+            </div>     
+        </template> 
+        
+        <!--CALL TEMPLATE-->
+        <div id="latest_articles_list"></div>
+
+        <!-- test template  -->
+        <div id="testing_home_template">
+                <a class = "article_title">Salt</a>
+                <a href="" class = "article_img"><img src=""></a>
+        </div>  
+
         <br><br><br><br>
-        <p>page in construction</p>
+        <h3>Randomized knowledge</h3>
+        <button id="random_article" onclick="">Another one!</button>
+
         </div>
            
     </body>
