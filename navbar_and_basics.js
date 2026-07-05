@@ -104,9 +104,9 @@ const headerEl = `
             
             <div class="navbar">
                 <ul> 
-                    <li class="main_tabs"><a href="${nesting}/index.html">Home</a></li>
-                    <li class="main_tabs"><a href="${nesting}/all_articles.html">Articles</a></li>
-                    <li class="main_tabs"><a href="${nesting}/about.html">About</a></li>
+                    <li class="main_tabs" id="home_button"><a href="${nesting}/index.html">Home</a></li>
+                    <li class="main_tabs" id="articles_button"><a href="${nesting}/all_articles.html">Articles</a></li>
+                    <li class="main_tabs" id="about_button"><a href="${nesting}/about.html">About</a></li>
                 </ul>
             </div>    
 

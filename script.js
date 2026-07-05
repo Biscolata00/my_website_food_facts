@@ -1,10 +1,10 @@
-// prevent scrollbar of the iframe
-function resizeIframeSave(obj) {
-        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-}
+var frame_bg_color = "#FFF4B5"
 
+// prevent scrollbar of the iframe + sets the right color
 function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        obj.style.background = frame_bg_color;
+        obj.contentWindow.document.body.style.backgroundColor = frame_bg_color;
 }
 
 
@@ -29,14 +29,22 @@ function openContent(evt, contentPart) { // https://www.w3schools.com/howto/howt
   document.getElementById(contentPart).style.display = "block";
   evt.currentTarget.className += " active";
  
+  // resize iframe to avoid double scroll bar
   var iframeName = contentPart + "_iframe"
   var myIframe = document.getElementById(iframeName);
   resizeIframe(myIframe)
+
+  // change iframe color
+  var iframe = document.getElementById(iframeName);
+  iframe.style.background = frame_bg_color;
+  iframe.contentWindow.document.body.style.backgroundColor = frame_bg_color;
 } 
+
 
 // open a tab by default once the content has finished loading
 window.addEventListener("DOMContentLoaded", function() { // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
-  document.getElementById("defaultOpen").click();
+  var default_button = document.getElementById("defaultOpen")
+  default_button.click();
 });
 
 
