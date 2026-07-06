@@ -127,10 +127,12 @@ const footerEl = `
         <div class="footer">
         <footer>
         <br>
-            <img src="${nesting}/images/watermelon.gif" class="img_footer">
+            <img src="" class="img_footer">
         </footer>
         </div>
 `;
+
+//${nesting}/images/watermelon.gif
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.

@@ -1,24 +1,63 @@
 /*--- GLOBAL VARS ---*/
 :root { 
+  --move-up-on-hover: translate(0%, -5%); 
+
+  /*font sizes*/
   --font-size-navbar: 20px;
   --font-size-navbar-title: 16px;
-  --hover-color: #adbb97;
-  --tab-color: rgb(65, 35, 11);
-  --move-up-on-hover: translate(0%, -5%); 
-  --footer-color: #d4ddc5; 
+  
+  /*fonts*/
   --website-name-font: "Lucida Console", "Courier New", monospace;
   --article-title-font: "Consolas";
+
+  /*colors*/
   --topbar-bg-color: #FFF4B5;
   --website-bg-color: #8B8863;
+  --article-title-color: #092c0d;
+  --footer-color: #d4ddc5; 
+  --hover-color: #46611d;
+  --tab-color: rgb(65, 35, 11);
+
+  /*images*/
+  --morris-pattern: url("images\\morris_test.png");
+  --morris-pattern_about: url("images\\morris_2.jpg");
+  --morris-pattern_index: url("images\\morris_3.jpg");
 }
 
 /*for debugging divs*/
 /*border: 3px solid rgba(0, 0, 0, 0.247);*/
 
+#about_body{
+  background-image: var(--morris-pattern_about);
+  background-size: 30%;
+}
+
+#about_div{
+  background-color: var(--topbar-bg-color);
+  margin: 4em 2em 0em;
+  border-radius: 10px;
+}
+
+#index_body{
+  background-image: var(--morris-pattern_index);
+  background-size: 30%;
+}
+
+#index_div{
+  background-color: var(--topbar-bg-color);
+  margin: 4em 2em 0em;  
+  border-radius: 10px;
+}
 
 body{
   background-color: var(--website-bg-color);
 }
+
+.article_page{
+  background-image: var(--morris-pattern);
+  background-position: 90px -80px;
+}
+
 
 /*--- SEARCHBAR ---*/
 pagefind-modal-trigger {
@@ -151,7 +190,7 @@ body div:not(.footer){
   justify-content: center;
   grid-row: 1;
   padding-top: 4em;
-  color: var(--topbar-bg-color);
+  color: var(--article-title-color);
   font-size: 16px;
   font-style: italic;
 }
@@ -160,6 +199,18 @@ body div:not(.footer){
   font-size: 38px;
   font-style: normal;
   font-family: var(--article-title-font);
+}
+
+#all_about_title h2{
+  background-color: var(--topbar-bg-color);
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  padding: 20px 40px;
+  border-style: solid;
+  border-width: 5%;
+  border-color: #092c0d;
+
 }
 
 /* Style the tab */
