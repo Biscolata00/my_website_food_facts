@@ -1,9 +1,8 @@
 TODO: 
-* index on google
-* publish article salt html
 * prevent website url from showing .html
-* center three main page similarly to salt page
 * set up landing page
+* compress morris images
+
 
 DONE:
 * create an index from a json 
@@ -34,3 +33,5 @@ DONE:
 * add an icon for mobile tab
 * fix zoomed in on mobile (removed scale = 1)
 * css for searchbar now in styles.css so that re-indexing does not affect it
+* publish article salt html
+* index on google

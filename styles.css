@@ -19,9 +19,9 @@
   --tab-color: rgb(65, 35, 11);
 
   /*images*/
-  --morris-pattern: url("images\\morris_test.png");
-  --morris-pattern_about: url("images\\morris_2.jpg");
-  --morris-pattern_index: url("images\\morris_3.jpg");
+  --morris-pattern: url("images\\morris_1_compressed.png");
+  --morris-pattern_about: url("images\\morris_2_compressed.jpg");
+  --morris-pattern_index: url("images\\morris_3_compressed.jpg");
 }
 
 /*for debugging divs*/
@@ -292,7 +292,8 @@ body{ /*set the body to take minimum the whole page so that the footer sits at t
 .footer {
   display: grid;
   justify-content: center;
-  background-color: --website-bg-color;
+  /* background-color: --website-bg-color; */
+  background-color: transparent;
   padding: 10px 0px 10px 0px; /*top, right, bottom, left*/
   margin-top: auto; /*footer is part of the body, and always sits at the bottom*/
 }
