@@ -348,6 +348,14 @@ body{ /*set the body to take minimum the whole page so that the footer sits at t
   #buttons_and_iframes{        
     margin: 0px
   }
+
+  #index_div{        
+    margin: 1em
+  }
+
+  #about_div{        
+    margin: 1em
+  }
 }
 
 /*dynamically hide website name if on a narrow screen*/
