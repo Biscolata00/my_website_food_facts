@@ -122,15 +122,17 @@ const headerEl = `
 
 // Insert your footer HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a footer.
-const footerEl = `
-        <br>	
-        <div class="footer">
-        <footer>
-        <br>
+const footerEl = ``;
+
+// `
+//         <br>	
+//         <div class="footer">
+//         <footer>
+//         <br>
             
-        </footer>
-        </div>
-`;
+//         </footer>
+//         </div>
+// `
 
 //<img src="${nesting}/images/watermelon.gif" class="img_footer">
 

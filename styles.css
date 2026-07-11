@@ -68,6 +68,10 @@
   background-size: 30%;
 }
 
+.tabcontent{
+  margin-bottom: 2em;
+}
+
 /* body{
   background-color: var(--website-bg-color);
 } */
