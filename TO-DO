@@ -1,6 +1,5 @@
 TODO: 
 * prevent website url from showing .html
-* set up landing page
 * upgrade 404
 
 
@@ -37,3 +36,5 @@ DONE:
 * index on google
 * compress morris images
 * set up 404.html
+* set up landing page
+* create a button to get to a random article from the homepage

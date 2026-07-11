@@ -42,7 +42,7 @@
 
 #index_body{
   background-image: var(--morris-pattern_index);
-  background-size: 30%;
+  background-size: 20%;
 }
 
 #index_div{
@@ -217,6 +217,22 @@ body div:not(.footer){
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+}
+
+#about_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about_div p{
+   text-align: center;
+   padding-bottom: 2em;
+}
+
+#about_div h3{
+  padding-top: 2em;
+  margin: 0px;
 }
 
 /*--- ARTICLE ---*/
