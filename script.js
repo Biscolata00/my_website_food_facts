@@ -113,3 +113,30 @@ function activateStickyFooter() {
 
 
 
+// OPEN RANDOM ARTICLE
+var articles_urls = [];
+window.addEventListener("DOMContentLoaded", function() {
+  fetch("articles.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((page_url) => {
+      page_url.forEach((url) => {
+        articles_urls.push(url.page_link)
+      })
+    }
+  )
+}
+);
+
+
+window.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("random_article").addEventListener("click", function(){
+    var random_artcl
+    random_artcl = Math.floor(Math.random() * articles_urls.length);
+    // alert(articles_urls[random_artcl])
+    document.getElementById("link_button_random_artcl").setAttribute("href", articles_urls[random_artcl]);
+  }
+)}
+);
+

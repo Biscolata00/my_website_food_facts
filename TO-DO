@@ -1,7 +1,7 @@
 TODO: 
 * prevent website url from showing .html
 * set up landing page
-* compress morris images
+* upgrade 404
 
 
 DONE:
@@ -35,3 +35,5 @@ DONE:
 * css for searchbar now in styles.css so that re-indexing does not affect it
 * publish article salt html
 * index on google
+* compress morris images
+* set up 404.html
