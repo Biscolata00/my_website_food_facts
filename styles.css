@@ -204,6 +204,7 @@ body div:not(.footer){
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 
@@ -221,6 +222,7 @@ body div:not(.footer){
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  margin: 16px;
 }
 
 #about_div{
@@ -413,6 +415,10 @@ body{ /*set the body to take minimum the whole page so that the footer sits at t
 
   #about_div{        
     margin: 1em
+  }
+
+  #home_div{
+    margin: 4em 4em 3em
   }
 }
 
