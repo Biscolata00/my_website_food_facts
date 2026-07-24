@@ -1,9 +1,15 @@
 [
     {
         "page_link": "articles_pages\\salt.html",
-        "page_kpts": "salt\\salt_kpts.html",
-        "page_sources": "articles_pages\\salt_sources.html",
         "article_name": "Salt",
+        "categorization": "core concepts",
+        "children":[]
+    },
+    {
+        "page_link": "articles_pages\\watermelon.html",
+        "article_name": "Watermelon",
+        "categorization": "ingredients",
         "children":[]
     }
+
 ]

@@ -49,54 +49,55 @@ window.addEventListener("DOMContentLoaded", function() { // https://developer.mo
 
 
 
-
-
 // build index dynamically
-fetch("articles.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((page_name) => {
-    const container = document.getElementById("index"); // get the container you wish to access from your html page
-    page_name.forEach((page) => {
-      const tmpl = document.getElementById("index_template") // for each page, get the template
-        .content.cloneNode(true); // clone the template
-      
-      tmpl.querySelector(".article_title").innerText = page.article_name; // select which part from the template we want to fill, then select what key we want from the json
-      tmpl.querySelector(".article_title").setAttribute("href", page.page_link); 
-      tmpl.querySelector(".article_title").setAttribute("onclick", "return fetchArticle");
+function buildIndex(index_name) {
+  fetch("articles.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((page_name) => {
+      const container = document.getElementById(index_name); // get the container you wish to access from your html page
+      page_name.forEach((page) => {
+        const tmpl = document.getElementById("index_template") // for each page, get the template
+          .content.cloneNode(true); // clone the template
+          
+          if(page.categorization == index_name){ // if the section correspond to the categorization indicated in json, e.g. ingredients, core concepts...
+            tmpl.querySelector(".article_title").innerText = page.article_name; // select which part from the template we want to fill, then select what key we want from the json
+            tmpl.querySelector(".article_title").setAttribute("href", page.page_link); 
+            tmpl.querySelector(".article_title").setAttribute("onclick", "return fetchArticle");
 
-      // if there are children, i.e. nested articles, create a new entry and append it to the template
-      // not directly part of the template so that there is no need to add a fixed number
-      if (page.children.length > 0){
-        page.children.forEach((sub_page) => {
-         
-        // create necessary elements  
-        create_sub_page = document.createElement("a");
-        create_line_break = document.createElement("br"); 
+            // if there are children, i.e. nested articles, create a new entry and append it to the template
+            // not directly part of the template so that there is no need to add a fixed number
+            if (page.children.length > 0){
+              page.children.forEach((sub_page) => {
+              
+              // create necessary elements  
+              create_sub_page = document.createElement("a");
+              create_line_break = document.createElement("br"); 
 
-        // fill the new article info
-        create_sub_page.innerText = sub_page.article_name;
-        create_sub_page.className = "sub_article_title"; 
-        create_sub_page.href  = sub_page.page_link;
+              // fill the new article info
+              create_sub_page.innerText = sub_page.article_name;
+              create_sub_page.className = "sub_article_title"; 
+              create_sub_page.href  = sub_page.page_link;
 
-        // append to template
-        tmpl.appendChild(create_sub_page);
-        tmpl.appendChild(create_line_break);
-        
+              // append to template
+              tmpl.appendChild(create_sub_page);
+              tmpl.appendChild(create_line_break);
+            
+                }
+              );
             }
-          );
+        // append filled template to the "index" div of the page  
+        container.appendChild(tmpl);        
+          }
         }
+      );
+    }
+  );
+}
 
-      // append filled template to the "index" div of the page  
-      container.appendChild(tmpl);  
-      
-      }
-    );
-  }
-);
-
-
+buildIndex("core concepts");
+buildIndex("ingredients");
 
 // when the page load, activate the sticky footer
 window.addEventListener("load", activateStickyFooter);

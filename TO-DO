@@ -1,6 +1,9 @@
 TODO: 
 * prevent website url from showing .html
 * upgrade 404
+* improve index with alphabetical order within categories
+* create and submit site map to google
+* find new background for homepage
 
 
 DONE:
@@ -38,3 +41,4 @@ DONE:
 * set up 404.html
 * set up landing page
 * create a button to get to a random article from the homepage
+* improve index with categories
